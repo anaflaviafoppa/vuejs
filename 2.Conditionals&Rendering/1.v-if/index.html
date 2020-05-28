@@ -1,0 +1,10 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link href="style.css" rel="stylesheet" />
+
+<div id="app">
+  <p v-if="show">You see me!</p>
+  <p v-else>You dont!</p>
+  <button @click="show=!show">Change!</button>
+</div>
+
+<script src="main.js"></script>
