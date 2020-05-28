@@ -1,0 +1,14 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+  <!-- apenas uma vez -->
+  <p v-once>{{ title }}</p>
+  <p>{{ sayHello() }}</p>
+
+  <h2>Anchor tag:</h2>
+  <a v-bind:href="link">VUE ORG</a>
+  <p v-html="finishedLink"></p>
+
+  <p>{{ title }}</p>
+</div>
+
+<script src="main.js"></script>
