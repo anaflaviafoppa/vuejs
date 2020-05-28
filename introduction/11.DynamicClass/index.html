@@ -13,6 +13,11 @@
   <div class="demo" :style="styleFunction"></div>
   <input type="text" v-model="color3" />
   <input type="text" v-model="width" />
+
+  <h1>input field 4</h1>
+  <div class="demo" :style="[styleFunction, {height: width +'px'}]"></div>
+  <input type="text" v-model="color3" />
+  <input type="text" v-model="width" />
 </div>
 
 <script src="main.js"></script>
