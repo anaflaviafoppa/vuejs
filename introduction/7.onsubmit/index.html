@@ -5,10 +5,17 @@
   </button>
   <p>{{ counter }}</p>
 
+  <button v-on:click="counter++">
+    Click-me 2
+  </button>
+  <p>{{ counter }}</p>
+
   <h1>Cooordinates:</h1>
   <p v-on:mousemove="updateCoordinates">
     Coordinates: {{x}}/{{y}} - <span v-on:mousemove.stop="">DEAD SPOT</span>
   </p>
+<!-- Can be enter or space  -->
+  <input type="text" v-on:keyup.space="Alertme" />
 </div>
 
 <script src="main.js"></script>
