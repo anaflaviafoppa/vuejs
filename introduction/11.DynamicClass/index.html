@@ -3,9 +3,16 @@
 
 <div id="app">
   <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
-  <div class="demo"></div>
-  <div class="demo"></div>
-  <div class="demo"></div>
+  <h1>input field</h1>
+  <div class="demo" :class="color"></div>
+  <input type="text" v-model="color" />
+  <h1>input field 2</h1>
+  <div class="demo" :style="{backgroundColor:color2}"></div>
+  <input type="text" v-model="color2" />
+  <h1>input field 3</h1>
+  <div class="demo" :style="styleFunction"></div>
+  <input type="text" v-model="color3" />
+  <input type="text" v-model="width" />
 </div>
 
 <script src="main.js"></script>

@@ -2,7 +2,7 @@
   width: 100px;
   height: 100px;
   background-color: gray;
-  display: inline-block;
+  display: block;
   margin: 10px;
 }
 
