@@ -1,0 +1,29 @@
+.demo {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  display: block;
+  margin: 10px;
+}
+
+.borderCounter {
+  border: 3px black solid;
+  width: 206px;
+  height: 25px;
+}
+
+.row-attack div{
+  width: 100%;
+  height: 25px;
+  background-color: rgba(243, 78, 196, 0.438) !important;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.row-attack div:nth-child(2n + 1) {
+  width: 100%;
+  height: 25px;
+  background-color: rgba(121, 7, 242, 0.2) !important;
+  text-align: center;
+  margin: 10px 0;
+}

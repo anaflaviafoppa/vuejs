@@ -1,0 +1,65 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  crossorigin="anonymous"
+/>
+<link href="style.css" rel="stylesheet" />
+<!-- Templete == Fragment -->
+<div id="app">
+  <div class="container">
+    <div class="row shadow-sm p-3 mb-5 mt-5 bg-white rounded">
+      <div class="col d-flex justify-content-center flex-column align-items-center">
+        <h1>MONSTER:</h1>
+        <div class="borderCounter">
+          <div :style="styleFunctionMonster"></div>
+        </div>
+
+        <h2>{{monsterCounter}} %</h2>
+      </div>
+
+      <div class="col d-flex justify-content-center flex-column align-items-center">
+        <h1>YOU</h1>
+        <div class="borderCounter">
+          <div :style="styleFunctionPlayer"></div>
+        </div>
+
+        <h2>{{playerCounter}} %</h2>
+      </div>
+    </div>
+
+    <div
+      class="row shadow-sm p-3 mb-5 mt-5 bg-white rounded d-flex justify-content-center align-items-center"
+    >
+      <button
+        type="button"
+        class="btn btn-success"
+        @click="playingGame=!playingGame"
+        v-if="!playingGame"
+      >
+        Let's play!
+      </button>
+      <template v-if="playingGame">
+        <button type="button" class="btn btn-danger ml-5" @click="playAttack(10,5)">ATTACK</button>
+        <button type="button" class="btn btn-warning ml-5" @click="playAttack(15,10)">
+          SPECIAL ATTACK
+        </button>
+        <button type="button" class="btn btn-info ml-5" @click="playHeal(10,5)">HEAL</button>
+        <button type="button" class="btn btn-light ml-5" @click="restart">
+          GIVE UP
+        </button>
+      </template>
+    </div>
+
+    <div
+      class="row shadow-sm p-3 mb-5 mt-5 bg-white rounded row-attack flex-column align-items-center"
+    >
+      <div v-for="attack in arrayAttack">
+        {{ attack}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
