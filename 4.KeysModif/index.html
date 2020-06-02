@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  crossorigin="anonymous"
+/>
+<link href="style.css" rel="stylesheet" />
+<!-- Templete == Fragment -->
+<div id="app">
+  <h1>Press Enter to submit</h1>
+  <input @keyup.enter="showAlert">
+
+
+  <ol>
+    <li>enter</li>
+    <li>tab</li>
+    <li>delete (captures both “Delete” and, if the keyboard has it, “Backspace”)</li>
+    <li>esc</li>
+    <li>space</li>
+    <li>up</li>
+    <li>down</li>
+    <li>left</li>
+    <li>right</li>
+  </ol>
+</div>
+
+<script src="main.js"></script>
