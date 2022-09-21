@@ -4,7 +4,7 @@
   "description": "",
   "main": "App.js",
   "dependencies": {
-    "vuetify": "^2.2.30"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {},
   "scripts": {
